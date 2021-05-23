@@ -1,0 +1,26 @@
+Started by user [8mha:////4NhGhhUFTo17LMyIhMAlxOSfKcGmeO9rXzLL0cvzDmkGAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZh/dLi1CL94sS8kvziDAtDS3MDYwBXz2z/yAAAAA==[0mSantosh Goundar
+Running as SYSTEM
+Building remotely on [8mha:////4LEGQWJUqlBn8B0pi0FktRsxDFX8ATbIYz1qiF0tFfSHAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/eLUorLUIhMAc1bVcMYAAAA=[0mserver4 (linux) in workspace /home/jenkins/jenkins_slave/workspace/Project2
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/bashazaid/javarepo.git
+ > git init /home/jenkins/jenkins_slave/workspace/Project2 # timeout=10
+Fetching upstream changes from https://github.com/bashazaid/javarepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/bashazaid/javarepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/bashazaid/javarepo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 49ef4d3e0b4cf9164bc2f422d3a846a9da43c8d4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 49ef4d3e0b4cf9164bc2f422d3a846a9da43c8d4 # timeout=10
+Commit message: "java"
+ > git rev-list --no-walk 49ef4d3e0b4cf9164bc2f422d3a846a9da43c8d4 # timeout=10
+[Project2] $ /bin/sh -xe /tmp/jenkins4281641436002239967.sh
++ mvn clean install
+/tmp/jenkins4281641436002239967.sh: 2: /tmp/jenkins4281641436002239967.sh: mvn: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

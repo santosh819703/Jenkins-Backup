@@ -1,0 +1,16 @@
+Started by GitHub push by santosh819703
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/Demo_webhook
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Demo_webhook/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/santosh819703/santosh_new.git # timeout=10
+Fetching upstream changes from https://github.com/santosh819703/santosh_new.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/santosh819703/santosh_new.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+Finished: FAILURE

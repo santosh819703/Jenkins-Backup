@@ -1,0 +1,39 @@
+SSHLauncher{host='172.31.37.160', port=22, credentialsId='60ed11ba-72bf-495f-af65-33c47046d778', jvmOptions='', javaPath='', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=60, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
+[05/23/21 05:55:48] [SSH] Opening SSH connection to 172.31.37.160:22.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 10 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 9 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 8 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 7 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 6 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 5 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 4 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 3 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 2 more retries left.
+connect timed out
+SSH Connection failed with IOException: "connect timed out", retrying in 15 seconds. There are 1 more retries left.
+connect timed out
+ERROR: Connection is not established!
+java.lang.IllegalStateException: Connection is not established!
+	at com.trilead.ssh2.Connection.getRemainingAuthMethods(Connection.java:988)
+	at com.cloudbees.jenkins.plugins.sshcredentials.impl.TrileadSSHPublicKeyAuthenticator.getRemainingAuthMethods(TrileadSSHPublicKeyAuthenticator.java:88)
+	at com.cloudbees.jenkins.plugins.sshcredentials.impl.TrileadSSHPublicKeyAuthenticator.canAuthenticate(TrileadSSHPublicKeyAuthenticator.java:80)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.newInstance(SSHAuthenticator.java:218)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.newInstance(SSHAuthenticator.java:171)
+	at hudson.plugins.sshslaves.SSHLauncher.openConnection(SSHLauncher.java:865)
+	at hudson.plugins.sshslaves.SSHLauncher$1.call(SSHLauncher.java:436)
+	at hudson.plugins.sshslaves.SSHLauncher$1.call(SSHLauncher.java:423)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[05/23/21 06:09:34] Launch failed - cleaning up connection
+[05/23/21 06:09:34] [SSH] Connection closed.

@@ -1,0 +1,12 @@
+Started on May 23, 2021 6:31:55 AM
+Started by event from 140.82.115.245 ⇒ http://52.14.239.203:8080/github-webhook/ on Sun May 23 06:31:55 UTC 2021
+Using strategy: Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git ls-remote -h -- https://github.com/santosh819703/santosh_new.git # timeout=10
+Found 2 remote heads on https://github.com/santosh819703/santosh_new.git
+[poll] Latest remote head revision on refs/heads/master is: bc8eac2f55e694c8e3a0e983168344614391140b
+Done. Took 0.2 sec
+Changes found

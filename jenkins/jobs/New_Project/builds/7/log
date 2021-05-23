@@ -1,0 +1,66 @@
+Started by user [8mha:////4NhGhhUFTo17LMyIhMAlxOSfKcGmeO9rXzLL0cvzDmkGAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZh/dLi1CL94sS8kvziDAtDS3MDYwBXz2z/yAAAAA==[0mSantosh Goundar
+Running as SYSTEM
+Building remotely on [8mha:////4LEGQWJUqlBn8B0pi0FktRsxDFX8ATbIYz1qiF0tFfSHAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/eLUorLUIhMAc1bVcMYAAAA=[0mserver4 (linux) in workspace /home/jenkins/jenkins_slave/workspace/New_Project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/jenkins/jenkins_slave/workspace/New_Project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/bashazaid/javarepo.git # timeout=10
+Fetching upstream changes from https://github.com/bashazaid/javarepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/bashazaid/javarepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 49ef4d3e0b4cf9164bc2f422d3a846a9da43c8d4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 49ef4d3e0b4cf9164bc2f422d3a846a9da43c8d4 # timeout=10
+Commit message: "java"
+ > git rev-list --no-walk 49ef4d3e0b4cf9164bc2f422d3a846a9da43c8d4 # timeout=10
+[New_Project] $ /bin/sh -xe /tmp/jenkins2889556828048238233.sh
++ mvn clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36morg.jacoco:org.jacoco.examples.maven.java[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding JaCoCo Maven plug-in example for Java project 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/jenkins/jenkins_slave/workspace/New_Project/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.2:prepare-agent[m [1m(default)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/home/jenkins/jenkins_slave/workspace/New_Project/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jenkins/jenkins_slave/workspace/New_Project/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jenkins/jenkins_slave/workspace/New_Project/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.2:report[m [1m(report)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;34mINFO[m] Skipping JaCoCo execution due to missing execution data file.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;33mWARNING[m] JAR will be empty - no content was marked for inclusion!
+[[1;34mINFO[m] Building jar: /home/jenkins/jenkins_slave/workspace/New_Project/target/org.jacoco.examples.maven.java-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36morg.jacoco.examples.maven.java[0;1m ---[m
+[[1;34mINFO[m] Installing /home/jenkins/jenkins_slave/workspace/New_Project/target/org.jacoco.examples.maven.java-1.0-SNAPSHOT.jar to /home/jenkins/.m2/repository/org/jacoco/org.jacoco.examples.maven.java/1.0-SNAPSHOT/org.jacoco.examples.maven.java-1.0-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/jenkins/jenkins_slave/workspace/New_Project/pom.xml to /home/jenkins/.m2/repository/org/jacoco/org.jacoco.examples.maven.java/1.0-SNAPSHOT/org.jacoco.examples.maven.java-1.0-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  3.318 s
+[[1;34mINFO[m] Finished at: 2021-05-21T13:47:11Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Finished: SUCCESS

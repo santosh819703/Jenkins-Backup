@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat May 22 06:15:29 UTC 2021
+org.jacoco.examples.maven.java-1.0-SNAPSHOT.jar>=
+org.jacoco.examples.maven.java-1.0-SNAPSHOT.pom>=
